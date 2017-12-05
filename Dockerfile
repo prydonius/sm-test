@@ -15,7 +15,7 @@ FROM gcr.io/bitnami-containers/minideb-extras:jessie-r12
 
 MAINTAINER Bitnami <containers@bitnami.com>
 
-ENV STACKSMITH_STACK_ID="tvziyhe" \
+ENV STACKSMITH_STACK_ID="lr8axwg" \
     STACKSMITH_STACK_NAME="PHP for prydonius/sm-test" \
     STACKSMITH_STACK_PRIVATE="1"
 
