@@ -11,15 +11,15 @@
 ##   Connect to the container at DOCKER_IP:9000
 ##     replacing DOCKER_IP for the IP of your active docker host
 
-FROM gcr.io/bitnami-containers/minideb-extras:jessie-r3
+FROM gcr.io/bitnami-containers/minideb-extras:jessie-r12
 
 MAINTAINER Bitnami <containers@bitnami.com>
 
-ENV STACKSMITH_STACK_ID="ybj5ln8" \
+ENV STACKSMITH_STACK_ID="oe1v4yh" \
     STACKSMITH_STACK_NAME="PHP for prydonius/sm-test" \
     STACKSMITH_STACK_PRIVATE="1"
 
-RUN bitnami-pkg install php-5.6.15-0
+RUN bitnami-pkg install php-7.0.3-2 --checksum 9cdad9daff3d4ecb1ddf0c0a009d2d43d9b440e65b5c76906134b390775136c7
 
 ENV PATH=/opt/bitnami/php/bin:$PATH
 
