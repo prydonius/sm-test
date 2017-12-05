@@ -28,6 +28,8 @@ ENV PATH=/opt/bitnami/php/bin:$PATH
 
 ## STACKSMITH-END: Modifications below this line will be unchanged when regenerating
 
+RUN my-awesome-cli-tool
+
 # PHP base template
 COPY . /app
 WORKDIR /app
